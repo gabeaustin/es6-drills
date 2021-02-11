@@ -4,7 +4,6 @@
 // }
 
 // Arrow Function
-// let fullName = "Gabriel Austin";
 let favMovie = (movie = "The Room", name = "Tommy Wiseau") => console.log(`My name is ${name} and my Favorite Movie is ${movie}.`);
 
 let getFirstName = (fullName) => {
@@ -13,14 +12,25 @@ let getFirstName = (fullName) => {
 
 let getFirstNameConcise = fullName => console.log(`${fullName.split(" ")[0]}, don't forget the "${fullName.split(" ")[1]}", is a great actor!`);
 
-
-
-
+/* COME BACK TO */
+/*
+let doMath = (num1 = 10, num2 = 5) => console.log(`The exponent result is ${(num1^num2)}. The product is ${(num1*num2)}.`);
+console.log(doMath);
+*/
 
 
 favMovie("Saw", "Gabe");
 getFirstName("Gabriel Austin");
 getFirstNameConcise("Don Cheadle");
+
+
+let nightOut = (name, location, favFood) => { 
+    console.log(`${name}, ${location}, ${favFood}`);
+};
+
+nightOut("Ian", "Mexico", "Tacos");
+
+
 
 
 
