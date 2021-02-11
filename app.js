@@ -24,14 +24,21 @@ getFirstName("Gabriel Austin");
 getFirstNameConcise("Don Cheadle");
 
 
-let nightOut = (name, location, favFood) => { 
-    console.log(`${name}, ${location}, ${favFood}`);
-};
-
-nightOut("Ian", "Mexico", "Tacos");
+let nightOutArray = ["Ian", "Mexico", "Filet Mignon"];
+let nightOut = (name, location, favFood) => console.log(`${name} ${location} ${favFood}`);
+nightOut(...nightOutArray);
 
 
 
+
+
+let nums = [3,5,7];
+
+function addNums(a,b,c) {
+    console.log(a+b+c);    
+}
+
+addNums(...nums);
 
 
 
