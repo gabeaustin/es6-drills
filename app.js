@@ -22,13 +22,21 @@ getFirstNameConcise("Don Cheadle");
 
 
 // Spread Syntax
-let tripInfo = ["Brad", "Miami", "pizza"];
-let developerName = "Gabe Austin";
 let nightOutPool = (name, location, favFood) => console.log(`${name} - ${location} - ${favFood}`);
+
+let tripInfo = ["Brad", "Miami", "pizza"];
 nightOutPool(...tripInfo);
 
+let developerName = "Gabe Austin";
+
 // Number 6
-let tripAdvisor = (companyName) => {console.log(...tripInfo)};
+let tripAdvisor = (companyName) => {
+    let spreadTripAdvisor = [...companyName];
+    for (i = 0; i < companyName.length; i++) {
+        console.log(spreadTripAdvisor[i]);
+    }
+}
+tripAdvisor(developerName);
 
 
 
